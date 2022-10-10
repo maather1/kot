@@ -59,7 +59,8 @@ class ToDo {
     }
 
     fun changeTask (isComplete: Task ){
-       //var isCompleted = true
+        val index = tasks.indexOf(task)
+        tasks[index].isCompleted = !tasks[index].isCompleted
         println("Task: ${isComplete.note}, Complete: ${!isComplete.isCompleted}")
     }
 }
